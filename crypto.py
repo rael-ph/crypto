@@ -9,7 +9,7 @@ def read_adm_password():
         with open("adm_password.txt", "r") as file:
             return file.read().strip()
     except FileNotFoundError:
-        return "back-up_password"
+        return "back-up_password" # (2F)
 
 def check_adm_password(input_password):
     stored_password = read_adm_password()
